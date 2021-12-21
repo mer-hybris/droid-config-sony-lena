@@ -120,7 +120,7 @@ del %tmpflashfile% >NUL 2>NUL
 setlocal EnableDelayedExpansion
 
 :: Find the blob image. Make sure there's only one.
-for /r %%f in (*_v7b_lena.img) do (
+for /r %%f in (*_v8a_lena.img) do (
 if not defined blobfilename (
 REM Take only the filename and strip out the path which otherwise is there.
 REM This is to make sure that we do not face issues later with e.g. spaces in the path etc.
@@ -146,7 +146,7 @@ echo Ensure you download the supported version of the image found under:
 echo "Software binaries for AOSP Android 11.0 - Kernel 4.19 - Lena"
 echo and unzip it into this directory.
 echo Note: information on which versions are supported is written in our Sailfish X
-echo installation instructions online.
+echo installation instructions online https://jolla.com/sailfishxinstall
 echo(
 echo Press enter to open the browser with the webpage.
 echo(
