@@ -7,7 +7,7 @@ FLASH_OPS=(
 "flash dtbo_a dtbo.img"
 "flash dtbo_b dtbo.img"
 "flash userdata sailfish.img001"
-"flash_blob oem_a *_v8a_lena.img"
+"flash_blob oem_a *_v9a_lena.img"
 )
 
 GETVAR_ERROR_secure="
