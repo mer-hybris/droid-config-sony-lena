@@ -1,0 +1,18 @@
+service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+    override
+    interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
+    class hal
+    user cameraserver
+    group audio camera input drmrpc
+    ioprio rt 4
+    capabilities SYS_NICE
+    task_profiles CameraServiceCapacity MaxPerformance
+    onrestart setprop jolla.restart_cameraserver true
+
+service restart_cameraserver /bin/sh /usr/bin/droid/droid-restart-cameraserver.sh
+    class hal
+    oneshot
+    disabled
+
+on property:jolla.restart_cameraserver=true
+    start restart_cameraserver
