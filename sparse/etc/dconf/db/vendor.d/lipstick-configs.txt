@@ -1,3 +1,6 @@
+[desktop/lipstick-jolla-home]
+reboot_on_sim_insert=true
+
 [desktop/lipstick-jolla-home/peekfilter]
 boundaryWidth=60
 boundaryHeight=60
