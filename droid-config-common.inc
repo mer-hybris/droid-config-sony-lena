@@ -7,6 +7,8 @@
 
 %define android_version_major 11
 
+Conflicts: appsupport-system-privileged
+
 # Device-specific ofono configuration
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
