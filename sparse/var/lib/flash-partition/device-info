@@ -4,12 +4,16 @@ CPUCHECK_STRING="Qualcomm Technologies, Inc LAGOON"
 # Others can go with partition numbers
 PART_1="boot_a"
 PART_32="boot_b"
+PART_33="recovery_a"
+PART_34="recovery_b"
 PART_66="dtbo_a"
 PART_67="dtbo_b"
 
 PART_REAL_1="sda31"
 PART_REAL_32="sda32"
+PART_REAL_33="sda33"
+PART_REAL_34="sda34"
 PART_REAL_66="sda66"
 PART_REAL_67="sda67"
 
-PART_I="1 32 66 67"
+PART_I="1 32 33 34 66 67"
