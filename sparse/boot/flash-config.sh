@@ -12,13 +12,13 @@ FLASH_OPS=(
 
 GETVAR_ERROR_secure="
 This device has not been unlocked, but you need that for flashing.
-Please go to https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/ and see instructions how to unlock your device.
+Please go to https://opendevices.sony.net/aosp-on-xperia-open-devices/get-started/unlock-bootloader and see instructions how to unlock your device.
 "
 
 BLOB_ERROR_NOT_FOUND_oem_a="
 The supported Sony Vendor partition image wasn't found in the current directory.
 Please download it from
-https://developer.sony.com/develop/open-devices/downloads/software-binaries/
+https://opendevices.sony.net/file/download/software-binaries-for-aosp-android-11-0-kernel-4-19-lena
 Ensure you download the supported version of the image found under:
 \"Software binaries for AOSP Android 11.0 - Kernel 4.19 - Lena\"
 and unzip it into this directory.
